@@ -43,7 +43,7 @@ export function createFighterPreview(fighter, position) {
 
     let fighterContentDetail;
 
-    if (fighter !== null) {
+    if (fighter !== null && typeof fighter === 'object') {
         Object.keys(fighter).forEach(key => {
             if (key !== 'source' && key !== '_id') {
                 fighterContentDetail = createElement({
