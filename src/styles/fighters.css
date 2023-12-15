@@ -32,3 +32,34 @@
   background: #cbe4f8;
   border: 5px solid #267abf;
 }
+
+.fighter___info {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 300px;
+  width: 300px;
+}
+
+.fighter-preview___right .fighter___info {
+  flex-direction: row-reverse;
+}
+
+.fighter-preview___right .fighter___info img {
+  transform: scaleX(-1);
+}
+
+.fighter___info img {
+  max-width: 50%;
+  height: fit-content;
+}
+
+.fighter___info-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: fit-content;
+  width: 150px;
+  background: #ffdfa7;
+  border: 5px solid #ca9650;
+}
